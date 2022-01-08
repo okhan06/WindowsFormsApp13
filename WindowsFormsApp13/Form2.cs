@@ -17,20 +17,15 @@ namespace WindowsFormsApp13
         public Form2()
         {
             InitializeComponent();
-
         }
         SqlConnection baglan = new SqlConnection("Data Source=XX-BILGISAYAR\\SQLEXPRESS;Initial Catalog=teknik_hizmet_database;Integrated Security=True");
 
         private void verilerimi_goster()
         {
-
             baglan.Open();
             SqlCommand komut = new SqlCommand("Select *from ariza_kayit", baglan);
             SqlDataReader oku = komut.ExecuteReader();
-
-
             baglan.Close();
-
         }
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -42,7 +37,6 @@ namespace WindowsFormsApp13
             panel3.Visible = false;
             panel5.Visible = false;
             panel6.Visible = false;
-
         }
         private void hideSubmenu()
         {
@@ -54,7 +48,6 @@ namespace WindowsFormsApp13
                 panel5.Visible = false;
             if (panel6.Visible == true)
                 panel6.Visible = false;
-
         }
         private void showSubmenu(Panel subMenu)
         {
@@ -118,13 +111,7 @@ namespace WindowsFormsApp13
         {
 
         }
-
-        private void bunifuMetroTextbox20_OnValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        
+                 
 
         private void hesap_kaydet_Click_1(object sender, EventArgs e)
         {
@@ -148,7 +135,6 @@ namespace WindowsFormsApp13
             float kap2 = float.Parse(kapasitif2_textbox.Text);
             float kap_fark = kap2 - kap1;
             kapasitif_fark_textbox.Text = Convert.ToString(kap_fark);
-
 
             float end_oran_son = (end_fark / akt_fark) * 100;
             enduktif_oran_textbox.Text = Convert.ToString(end_oran_son);
