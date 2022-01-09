@@ -187,6 +187,9 @@
   <metadata name="teknik_hizmet_databaseDataSet13.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>687, 134</value>
   </metadata>
+  <metadata name="teknik_hizmet_databaseDataSet13.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>687, 134</value>
+  </metadata>
   <data name="bunifuFlatButton2.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -285,6 +288,39 @@
         /QtXV4yCT+SP6QAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="ariza_kayit_programi_buton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
   <data name="bahçe_sulama_buton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAYAAABNChwpAAAABHNCSVQICAgIfAhkiAAAAAFzUkdCAK7O
@@ -355,11 +391,14 @@
   <metadata name="teknik_hizmet_databaseDataSet12.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 134</value>
   </metadata>
+  <metadata name="teknik_hizmet_databaseDataSet12.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 134</value>
+  </metadata>
   <metadata name="table_elektrikanaTableAdapter1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>241, 173</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>137</value>
+    <value>56</value>
   </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

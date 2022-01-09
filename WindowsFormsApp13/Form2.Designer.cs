@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
             this.aktif1 = new System.Windows.Forms.Label();
             this.aktif2 = new System.Windows.Forms.Label();
             this.aktif_fark = new System.Windows.Forms.Label();
@@ -98,8 +98,6 @@
             this.endeks_gaz_buton = new System.Windows.Forms.Button();
             this.endeks_elektrik_buton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.ariza_kayit_programi_buton = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.cim_sulama_buton = new System.Windows.Forms.Button();
@@ -128,6 +126,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.aktif_fark_textbox = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.ariza_kayit_programi_buton = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableelektrikanaBindingSource1)).BeginInit();
@@ -136,7 +136,6 @@
             this.panel_elektrik_ana.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tableelektrikanaBindingSource)).BeginInit();
@@ -516,14 +515,14 @@
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.tarihDataGridViewTextBoxColumn,
@@ -539,30 +538,30 @@
             this.kapasitiffarkDataGridViewTextBoxColumn,
             this.kapasitiforanDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.tableelektrikanaBindingSource1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle18;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnF2;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dataGridView1.Location = new System.Drawing.Point(0, 183);
             this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.NullValue = null;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle19.NullValue = null;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.White;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle20;
             this.dataGridView1.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(40)))));
             this.dataGridView1.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataGridView1.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Gainsboro;
@@ -1027,7 +1026,7 @@
             this.endeks_buton.ForeColor = System.Drawing.Color.Gainsboro;
             this.endeks_buton.Image = ((System.Drawing.Image)(resources.GetObject("endeks_buton.Image")));
             this.endeks_buton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.endeks_buton.Location = new System.Drawing.Point(0, 303);
+            this.endeks_buton.Location = new System.Drawing.Point(0, 252);
             this.endeks_buton.Name = "endeks_buton";
             this.endeks_buton.Size = new System.Drawing.Size(172, 44);
             this.endeks_buton.TabIndex = 6;
@@ -1042,10 +1041,11 @@
             this.panel6.Controls.Add(this.endeks_gaz_buton);
             this.panel6.Controls.Add(this.endeks_elektrik_buton);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 347);
+            this.panel6.Location = new System.Drawing.Point(0, 296);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(172, 80);
             this.panel6.TabIndex = 1;
+            this.panel6.Visible = false;
             // 
             // endeks_su_buton
             // 
@@ -1104,10 +1104,11 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(104)))), ((int)(((byte)(142)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
+            this.panel1.Controls.Add(this.panel5);
+            this.panel1.Controls.Add(this.ariza_kayit_programi_buton);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.endeks_buton);
-            this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.bahçe_sulama_buton);
@@ -1119,32 +1120,6 @@
             this.panel1.Size = new System.Drawing.Size(172, 800);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.ariza_kayit_programi_buton);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 258);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(172, 45);
-            this.panel5.TabIndex = 5;
-            // 
-            // ariza_kayit_programi_buton
-            // 
-            this.ariza_kayit_programi_buton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.ariza_kayit_programi_buton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ariza_kayit_programi_buton.FlatAppearance.BorderSize = 0;
-            this.ariza_kayit_programi_buton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ariza_kayit_programi_buton.Font = new System.Drawing.Font("Century Gothic", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ariza_kayit_programi_buton.ForeColor = System.Drawing.Color.Gainsboro;
-            this.ariza_kayit_programi_buton.Location = new System.Drawing.Point(0, 0);
-            this.ariza_kayit_programi_buton.Name = "ariza_kayit_programi_buton";
-            this.ariza_kayit_programi_buton.Size = new System.Drawing.Size(172, 29);
-            this.ariza_kayit_programi_buton.TabIndex = 1;
-            this.ariza_kayit_programi_buton.Text = "Ariza Kayit Programı";
-            this.ariza_kayit_programi_buton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ariza_kayit_programi_buton.UseVisualStyleBackColor = false;
-            this.ariza_kayit_programi_buton.Click += new System.EventHandler(this.ariza_kayit_programi_buton_Click);
             // 
             // panel4
             // 
@@ -1159,7 +1134,7 @@
             this.panel3.Controls.Add(this.cim_sulama_buton);
             this.panel3.Controls.Add(this.su_deposu_buton);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 208);
+            this.panel3.Location = new System.Drawing.Point(0, 202);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(172, 50);
             this.panel3.TabIndex = 3;
@@ -1209,7 +1184,7 @@
             this.bahçe_sulama_buton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bahçe_sulama_buton.Location = new System.Drawing.Point(0, 164);
             this.bahçe_sulama_buton.Name = "bahçe_sulama_buton";
-            this.bahçe_sulama_buton.Size = new System.Drawing.Size(172, 44);
+            this.bahçe_sulama_buton.Size = new System.Drawing.Size(172, 38);
             this.bahçe_sulama_buton.TabIndex = 2;
             this.bahçe_sulama_buton.Text = "            Bahçe Sulama";
             this.bahçe_sulama_buton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1532,6 +1507,32 @@
             this.panel10.TabIndex = 47;
             this.panel10.Visible = false;
             // 
+            // ariza_kayit_programi_buton
+            // 
+            this.ariza_kayit_programi_buton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.ariza_kayit_programi_buton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ariza_kayit_programi_buton.FlatAppearance.BorderSize = 0;
+            this.ariza_kayit_programi_buton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ariza_kayit_programi_buton.Font = new System.Drawing.Font("Century Gothic", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ariza_kayit_programi_buton.ForeColor = System.Drawing.Color.Gainsboro;
+            this.ariza_kayit_programi_buton.Image = ((System.Drawing.Image)(resources.GetObject("ariza_kayit_programi_buton.Image")));
+            this.ariza_kayit_programi_buton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ariza_kayit_programi_buton.Location = new System.Drawing.Point(0, 376);
+            this.ariza_kayit_programi_buton.Name = "ariza_kayit_programi_buton";
+            this.ariza_kayit_programi_buton.Size = new System.Drawing.Size(172, 44);
+            this.ariza_kayit_programi_buton.TabIndex = 28;
+            this.ariza_kayit_programi_buton.Text = "      Ariza Kayit ";
+            this.ariza_kayit_programi_buton.UseVisualStyleBackColor = false;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(40)))));
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 420);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(172, 100);
+            this.panel5.TabIndex = 27;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1559,7 +1560,6 @@
             this.panel_elektrik_ana.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tableelektrikanaBindingSource)).EndInit();
@@ -1621,8 +1621,6 @@
         private System.Windows.Forms.Button endeks_gaz_buton;
         private System.Windows.Forms.Button endeks_elektrik_buton;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button ariza_kayit_programi_buton;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button cim_sulama_buton;
@@ -1666,5 +1664,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private Bunifu.Framework.UI.BunifuMetroTextbox kapasitif_fark_textbox;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button ariza_kayit_programi_buton;
     }
 }
