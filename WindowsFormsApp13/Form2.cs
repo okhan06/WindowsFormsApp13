@@ -87,13 +87,7 @@ namespace WindowsFormsApp13
         {
             // TODO: Bu kod satırı 'teknik_hizmet_databaseDataSet13.Table_elektrikana' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
             this.table_elektrikanaTableAdapter1.Fill(this.teknik_hizmet_databaseDataSet13.Table_elektrikana);
-
-
-
-
-
-
-
+                                                         
         }
 
         private void endeks_elektrik_buton_Click(object sender, EventArgs e)
@@ -121,6 +115,24 @@ namespace WindowsFormsApp13
 
         private void hesap_kaydet_Click(object sender, EventArgs e)
         {
+            
+
+            if (aktif1_textbox.Text == "" && aktif2_textbox.Text == "" &&
+                        enduktif1_textbox.Text == "" && enduktif2_textbox.Text == "" &&
+                        kapasitif1_textbox.Text == "" && kapasitif2_textbox.Text == "")
+            {
+                MessageBox.Show(" Boş alan bırakmayınız");               
+
+            }
+
+            else
+
+            {
+                panel10.Visible = true;
+            }
+                                
+
+
             float akt1 = float.Parse(aktif1_textbox.Text);
             float akt2 = float.Parse(aktif2_textbox.Text);
             float akt_fark = akt2 - akt1;
