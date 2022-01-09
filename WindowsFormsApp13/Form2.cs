@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using MySql.Data;
+using MySql.Data.MySqlClient;
 
 
 namespace WindowsFormsApp13
@@ -17,6 +19,7 @@ namespace WindowsFormsApp13
         public Form2()
         {
             InitializeComponent();
+            
         }
         SqlConnection baglan = new SqlConnection("Data Source=XX-BILGISAYAR\\SQLEXPRESS;Initial Catalog=teknik_hizmet_database;Integrated Security=True");
 
@@ -112,16 +115,18 @@ namespace WindowsFormsApp13
             
 
         }
-
+        
         private void hesap_kaydet_Click(object sender, EventArgs e)
         {
             
 
-            if (aktif1_textbox.Text == "" && aktif2_textbox.Text == "" &&
-                        enduktif1_textbox.Text == "" && enduktif2_textbox.Text == "" &&
-                        kapasitif1_textbox.Text == "" && kapasitif2_textbox.Text == "")
+            if (aktif1_textbox.Text == "" || aktif2_textbox.Text == "" ||
+                        enduktif1_textbox.Text == "" || enduktif2_textbox.Text == "" ||
+                        kapasitif1_textbox.Text == "" || kapasitif2_textbox.Text == "")
             {
-                MessageBox.Show(" Boş alan bırakmayınız");               
+                MessageBox.Show(" Boş alan bırakmayınız");
+                return;
+                
 
             }
 
@@ -131,7 +136,7 @@ namespace WindowsFormsApp13
                 panel10.Visible = true;
             }
                                 
-
+            
 
             float akt1 = float.Parse(aktif1_textbox.Text);
             float akt2 = float.Parse(aktif2_textbox.Text);
@@ -181,6 +186,7 @@ namespace WindowsFormsApp13
                 baglan.Close();
                 
                 MessageBox.Show("Kaydedildi.");
+                
             }
             catch (Exception hata)
             {
@@ -202,6 +208,11 @@ namespace WindowsFormsApp13
                 
                 
             }
+        }
+
+        private void dataGridView1_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+            label12.Text = dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
         }
     }
 }

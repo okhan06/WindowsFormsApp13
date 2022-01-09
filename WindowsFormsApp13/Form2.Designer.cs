@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.aktif1 = new System.Windows.Forms.Label();
             this.aktif2 = new System.Windows.Forms.Label();
             this.aktif_fark = new System.Windows.Forms.Label();
@@ -74,6 +74,18 @@
             this.tableelektrikanaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.teknik_hizmet_databaseDataSet13 = new WindowsFormsApp13.teknik_hizmet_databaseDataSet13();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.kapasitif_oran_textbox = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.aktif_fark_textbox = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.enduktif_oran_textbox = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.enduktif_fark_textbox = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.kapasitif_fark_textbox = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.timepicker = new Bunifu.Framework.UI.BunifuDatepicker();
             this.bunifuFlatButton4 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.hesap_kaydet = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -98,6 +110,8 @@
             this.endeks_gaz_buton = new System.Windows.Forms.Button();
             this.endeks_elektrik_buton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.ariza_kayit_programi_buton = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.cim_sulama_buton = new System.Windows.Forms.Button();
@@ -115,24 +129,12 @@
             this.tableelektrikanaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.teknik_hizmet_databaseDataSet12 = new WindowsFormsApp13.teknik_hizmet_databaseDataSet12();
             this.table_elektrikanaTableAdapter1 = new WindowsFormsApp13.teknik_hizmet_databaseDataSet13TableAdapters.Table_elektrikanaTableAdapter();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.enduktif_fark_textbox = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.kapasitif_oran_textbox = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.kapasitif_fark_textbox = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.enduktif_oran_textbox = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.aktif_fark_textbox = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.ariza_kayit_programi_buton = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableelektrikanaBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.teknik_hizmet_databaseDataSet13)).BeginInit();
             this.panel9.SuspendLayout();
+            this.panel10.SuspendLayout();
             this.panel_elektrik_ana.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -140,7 +142,6 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tableelektrikanaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.teknik_hizmet_databaseDataSet12)).BeginInit();
-            this.panel10.SuspendLayout();
             this.SuspendLayout();
             // 
             // aktif1
@@ -515,14 +516,14 @@
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.tarihDataGridViewTextBoxColumn,
@@ -538,30 +539,30 @@
             this.kapasitiffarkDataGridViewTextBoxColumn,
             this.kapasitiforanDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.tableelektrikanaBindingSource1;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnF2;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dataGridView1.Location = new System.Drawing.Point(0, 183);
             this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle19.NullValue = null;
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle19;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.White;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.NullValue = null;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridView1.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(40)))));
             this.dataGridView1.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataGridView1.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Gainsboro;
@@ -571,6 +572,7 @@
             this.dataGridView1.Size = new System.Drawing.Size(1108, 601);
             this.dataGridView1.TabIndex = 26;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellEndEdit);
             // 
             // tarihDataGridViewTextBoxColumn
             // 
@@ -656,6 +658,7 @@
             // 
             // panel9
             // 
+            this.panel9.Controls.Add(this.label12);
             this.panel9.Controls.Add(this.panel10);
             this.panel9.Controls.Add(this.timepicker);
             this.panel9.Controls.Add(this.bunifuFlatButton4);
@@ -677,6 +680,178 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(1108, 183);
             this.panel9.TabIndex = 25;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(597, 62);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(41, 13);
+            this.label12.TabIndex = 44;
+            this.label12.Text = "label12";
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.label9);
+            this.panel10.Controls.Add(this.kapasitif_oran_textbox);
+            this.panel10.Controls.Add(this.aktif_fark_textbox);
+            this.panel10.Controls.Add(this.label2);
+            this.panel10.Controls.Add(this.enduktif_oran_textbox);
+            this.panel10.Controls.Add(this.label6);
+            this.panel10.Controls.Add(this.enduktif_fark_textbox);
+            this.panel10.Controls.Add(this.label1);
+            this.panel10.Controls.Add(this.label3);
+            this.panel10.Controls.Add(this.kapasitif_fark_textbox);
+            this.panel10.Location = new System.Drawing.Point(282, 3);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(309, 177);
+            this.panel10.TabIndex = 47;
+            this.panel10.Visible = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label9.Location = new System.Drawing.Point(13, 12);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(62, 13);
+            this.label9.TabIndex = 24;
+            this.label9.Text = "Aktif Fark";
+            // 
+            // kapasitif_oran_textbox
+            // 
+            this.kapasitif_oran_textbox.BorderColorFocused = System.Drawing.Color.Blue;
+            this.kapasitif_oran_textbox.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(104)))), ((int)(((byte)(142)))));
+            this.kapasitif_oran_textbox.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.kapasitif_oran_textbox.BorderThickness = 3;
+            this.kapasitif_oran_textbox.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.kapasitif_oran_textbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.kapasitif_oran_textbox.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.kapasitif_oran_textbox.ForeColor = System.Drawing.Color.Gainsboro;
+            this.kapasitif_oran_textbox.isPassword = false;
+            this.kapasitif_oran_textbox.Location = new System.Drawing.Point(169, 142);
+            this.kapasitif_oran_textbox.Margin = new System.Windows.Forms.Padding(4);
+            this.kapasitif_oran_textbox.MaxLength = 32767;
+            this.kapasitif_oran_textbox.Name = "kapasitif_oran_textbox";
+            this.kapasitif_oran_textbox.Size = new System.Drawing.Size(123, 23);
+            this.kapasitif_oran_textbox.TabIndex = 43;
+            this.kapasitif_oran_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // aktif_fark_textbox
+            // 
+            this.aktif_fark_textbox.BorderColorFocused = System.Drawing.Color.Blue;
+            this.aktif_fark_textbox.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(104)))), ((int)(((byte)(142)))));
+            this.aktif_fark_textbox.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.aktif_fark_textbox.BorderThickness = 3;
+            this.aktif_fark_textbox.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.aktif_fark_textbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.aktif_fark_textbox.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.aktif_fark_textbox.ForeColor = System.Drawing.Color.Gainsboro;
+            this.aktif_fark_textbox.isPassword = false;
+            this.aktif_fark_textbox.Location = new System.Drawing.Point(16, 29);
+            this.aktif_fark_textbox.Margin = new System.Windows.Forms.Padding(4);
+            this.aktif_fark_textbox.MaxLength = 32767;
+            this.aktif_fark_textbox.Name = "aktif_fark_textbox";
+            this.aktif_fark_textbox.Size = new System.Drawing.Size(123, 23);
+            this.aktif_fark_textbox.TabIndex = 35;
+            this.aktif_fark_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(166, 115);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(87, 13);
+            this.label2.TabIndex = 31;
+            this.label2.Text = "Kapasitif Oran";
+            // 
+            // enduktif_oran_textbox
+            // 
+            this.enduktif_oran_textbox.BorderColorFocused = System.Drawing.Color.Blue;
+            this.enduktif_oran_textbox.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(104)))), ((int)(((byte)(142)))));
+            this.enduktif_oran_textbox.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.enduktif_oran_textbox.BorderThickness = 3;
+            this.enduktif_oran_textbox.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.enduktif_oran_textbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.enduktif_oran_textbox.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.enduktif_oran_textbox.ForeColor = System.Drawing.Color.Gainsboro;
+            this.enduktif_oran_textbox.isPassword = false;
+            this.enduktif_oran_textbox.Location = new System.Drawing.Point(169, 85);
+            this.enduktif_oran_textbox.Margin = new System.Windows.Forms.Padding(4);
+            this.enduktif_oran_textbox.MaxLength = 32767;
+            this.enduktif_oran_textbox.Name = "enduktif_oran_textbox";
+            this.enduktif_oran_textbox.Size = new System.Drawing.Size(123, 23);
+            this.enduktif_oran_textbox.TabIndex = 42;
+            this.enduktif_oran_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.Location = new System.Drawing.Point(14, 65);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(83, 13);
+            this.label6.TabIndex = 27;
+            this.label6.Text = "Endüktif Fark";
+            // 
+            // enduktif_fark_textbox
+            // 
+            this.enduktif_fark_textbox.BorderColorFocused = System.Drawing.Color.Blue;
+            this.enduktif_fark_textbox.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(104)))), ((int)(((byte)(142)))));
+            this.enduktif_fark_textbox.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.enduktif_fark_textbox.BorderThickness = 3;
+            this.enduktif_fark_textbox.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.enduktif_fark_textbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.enduktif_fark_textbox.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.enduktif_fark_textbox.ForeColor = System.Drawing.Color.Gainsboro;
+            this.enduktif_fark_textbox.isPassword = false;
+            this.enduktif_fark_textbox.Location = new System.Drawing.Point(16, 82);
+            this.enduktif_fark_textbox.Margin = new System.Windows.Forms.Padding(4);
+            this.enduktif_fark_textbox.MaxLength = 32767;
+            this.enduktif_fark_textbox.Name = "enduktif_fark_textbox";
+            this.enduktif_fark_textbox.Size = new System.Drawing.Size(123, 23);
+            this.enduktif_fark_textbox.TabIndex = 38;
+            this.enduktif_fark_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(166, 65);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(85, 13);
+            this.label1.TabIndex = 32;
+            this.label1.Text = "Endüktif Oran";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(14, 115);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(85, 13);
+            this.label3.TabIndex = 30;
+            this.label3.Text = "Kapasitif Fark";
+            // 
+            // kapasitif_fark_textbox
+            // 
+            this.kapasitif_fark_textbox.BorderColorFocused = System.Drawing.Color.Blue;
+            this.kapasitif_fark_textbox.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(104)))), ((int)(((byte)(142)))));
+            this.kapasitif_fark_textbox.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.kapasitif_fark_textbox.BorderThickness = 3;
+            this.kapasitif_fark_textbox.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.kapasitif_fark_textbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.kapasitif_fark_textbox.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.kapasitif_fark_textbox.ForeColor = System.Drawing.Color.Gainsboro;
+            this.kapasitif_fark_textbox.isPassword = false;
+            this.kapasitif_fark_textbox.Location = new System.Drawing.Point(17, 142);
+            this.kapasitif_fark_textbox.Margin = new System.Windows.Forms.Padding(4);
+            this.kapasitif_fark_textbox.MaxLength = 32767;
+            this.kapasitif_fark_textbox.Name = "kapasitif_fark_textbox";
+            this.kapasitif_fark_textbox.Size = new System.Drawing.Size(123, 23);
+            this.kapasitif_fark_textbox.TabIndex = 41;
+            this.kapasitif_fark_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // timepicker
             // 
@@ -1121,6 +1296,32 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(40)))));
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 420);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(172, 100);
+            this.panel5.TabIndex = 27;
+            // 
+            // ariza_kayit_programi_buton
+            // 
+            this.ariza_kayit_programi_buton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.ariza_kayit_programi_buton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ariza_kayit_programi_buton.FlatAppearance.BorderSize = 0;
+            this.ariza_kayit_programi_buton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ariza_kayit_programi_buton.Font = new System.Drawing.Font("Century Gothic", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ariza_kayit_programi_buton.ForeColor = System.Drawing.Color.Gainsboro;
+            this.ariza_kayit_programi_buton.Image = ((System.Drawing.Image)(resources.GetObject("ariza_kayit_programi_buton.Image")));
+            this.ariza_kayit_programi_buton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ariza_kayit_programi_buton.Location = new System.Drawing.Point(0, 376);
+            this.ariza_kayit_programi_buton.Name = "ariza_kayit_programi_buton";
+            this.ariza_kayit_programi_buton.Size = new System.Drawing.Size(172, 44);
+            this.ariza_kayit_programi_buton.TabIndex = 28;
+            this.ariza_kayit_programi_buton.Text = "      Ariza Kayit ";
+            this.ariza_kayit_programi_buton.UseVisualStyleBackColor = false;
+            // 
             // panel4
             // 
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -1344,195 +1545,6 @@
             // 
             this.table_elektrikanaTableAdapter1.ClearBeforeFill = true;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(14, 115);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 13);
-            this.label3.TabIndex = 30;
-            this.label3.Text = "Kapasitif Fark";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(166, 115);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 13);
-            this.label2.TabIndex = 31;
-            this.label2.Text = "Kapasitif Oran";
-            // 
-            // enduktif_fark_textbox
-            // 
-            this.enduktif_fark_textbox.BorderColorFocused = System.Drawing.Color.Blue;
-            this.enduktif_fark_textbox.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(104)))), ((int)(((byte)(142)))));
-            this.enduktif_fark_textbox.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.enduktif_fark_textbox.BorderThickness = 3;
-            this.enduktif_fark_textbox.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.enduktif_fark_textbox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.enduktif_fark_textbox.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.enduktif_fark_textbox.ForeColor = System.Drawing.Color.Gainsboro;
-            this.enduktif_fark_textbox.isPassword = false;
-            this.enduktif_fark_textbox.Location = new System.Drawing.Point(16, 82);
-            this.enduktif_fark_textbox.Margin = new System.Windows.Forms.Padding(4);
-            this.enduktif_fark_textbox.MaxLength = 32767;
-            this.enduktif_fark_textbox.Name = "enduktif_fark_textbox";
-            this.enduktif_fark_textbox.Size = new System.Drawing.Size(123, 23);
-            this.enduktif_fark_textbox.TabIndex = 38;
-            this.enduktif_fark_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(14, 65);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(83, 13);
-            this.label6.TabIndex = 27;
-            this.label6.Text = "Endüktif Fark";
-            // 
-            // kapasitif_oran_textbox
-            // 
-            this.kapasitif_oran_textbox.BorderColorFocused = System.Drawing.Color.Blue;
-            this.kapasitif_oran_textbox.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(104)))), ((int)(((byte)(142)))));
-            this.kapasitif_oran_textbox.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.kapasitif_oran_textbox.BorderThickness = 3;
-            this.kapasitif_oran_textbox.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.kapasitif_oran_textbox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.kapasitif_oran_textbox.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.kapasitif_oran_textbox.ForeColor = System.Drawing.Color.Gainsboro;
-            this.kapasitif_oran_textbox.isPassword = false;
-            this.kapasitif_oran_textbox.Location = new System.Drawing.Point(169, 142);
-            this.kapasitif_oran_textbox.Margin = new System.Windows.Forms.Padding(4);
-            this.kapasitif_oran_textbox.MaxLength = 32767;
-            this.kapasitif_oran_textbox.Name = "kapasitif_oran_textbox";
-            this.kapasitif_oran_textbox.Size = new System.Drawing.Size(123, 23);
-            this.kapasitif_oran_textbox.TabIndex = 43;
-            this.kapasitif_oran_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // kapasitif_fark_textbox
-            // 
-            this.kapasitif_fark_textbox.BorderColorFocused = System.Drawing.Color.Blue;
-            this.kapasitif_fark_textbox.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(104)))), ((int)(((byte)(142)))));
-            this.kapasitif_fark_textbox.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.kapasitif_fark_textbox.BorderThickness = 3;
-            this.kapasitif_fark_textbox.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.kapasitif_fark_textbox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.kapasitif_fark_textbox.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.kapasitif_fark_textbox.ForeColor = System.Drawing.Color.Gainsboro;
-            this.kapasitif_fark_textbox.isPassword = false;
-            this.kapasitif_fark_textbox.Location = new System.Drawing.Point(17, 142);
-            this.kapasitif_fark_textbox.Margin = new System.Windows.Forms.Padding(4);
-            this.kapasitif_fark_textbox.MaxLength = 32767;
-            this.kapasitif_fark_textbox.Name = "kapasitif_fark_textbox";
-            this.kapasitif_fark_textbox.Size = new System.Drawing.Size(123, 23);
-            this.kapasitif_fark_textbox.TabIndex = 41;
-            this.kapasitif_fark_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // enduktif_oran_textbox
-            // 
-            this.enduktif_oran_textbox.BorderColorFocused = System.Drawing.Color.Blue;
-            this.enduktif_oran_textbox.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(104)))), ((int)(((byte)(142)))));
-            this.enduktif_oran_textbox.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.enduktif_oran_textbox.BorderThickness = 3;
-            this.enduktif_oran_textbox.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.enduktif_oran_textbox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.enduktif_oran_textbox.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.enduktif_oran_textbox.ForeColor = System.Drawing.Color.Gainsboro;
-            this.enduktif_oran_textbox.isPassword = false;
-            this.enduktif_oran_textbox.Location = new System.Drawing.Point(169, 85);
-            this.enduktif_oran_textbox.Margin = new System.Windows.Forms.Padding(4);
-            this.enduktif_oran_textbox.MaxLength = 32767;
-            this.enduktif_oran_textbox.Name = "enduktif_oran_textbox";
-            this.enduktif_oran_textbox.Size = new System.Drawing.Size(123, 23);
-            this.enduktif_oran_textbox.TabIndex = 42;
-            this.enduktif_oran_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(166, 65);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 13);
-            this.label1.TabIndex = 32;
-            this.label1.Text = "Endüktif Oran";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(13, 12);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(62, 13);
-            this.label9.TabIndex = 24;
-            this.label9.Text = "Aktif Fark";
-            // 
-            // aktif_fark_textbox
-            // 
-            this.aktif_fark_textbox.BorderColorFocused = System.Drawing.Color.Blue;
-            this.aktif_fark_textbox.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(104)))), ((int)(((byte)(142)))));
-            this.aktif_fark_textbox.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.aktif_fark_textbox.BorderThickness = 3;
-            this.aktif_fark_textbox.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.aktif_fark_textbox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.aktif_fark_textbox.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.aktif_fark_textbox.ForeColor = System.Drawing.Color.Gainsboro;
-            this.aktif_fark_textbox.isPassword = false;
-            this.aktif_fark_textbox.Location = new System.Drawing.Point(16, 29);
-            this.aktif_fark_textbox.Margin = new System.Windows.Forms.Padding(4);
-            this.aktif_fark_textbox.MaxLength = 32767;
-            this.aktif_fark_textbox.Name = "aktif_fark_textbox";
-            this.aktif_fark_textbox.Size = new System.Drawing.Size(123, 23);
-            this.aktif_fark_textbox.TabIndex = 35;
-            this.aktif_fark_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.label9);
-            this.panel10.Controls.Add(this.kapasitif_oran_textbox);
-            this.panel10.Controls.Add(this.aktif_fark_textbox);
-            this.panel10.Controls.Add(this.label2);
-            this.panel10.Controls.Add(this.enduktif_oran_textbox);
-            this.panel10.Controls.Add(this.label6);
-            this.panel10.Controls.Add(this.enduktif_fark_textbox);
-            this.panel10.Controls.Add(this.label1);
-            this.panel10.Controls.Add(this.label3);
-            this.panel10.Controls.Add(this.kapasitif_fark_textbox);
-            this.panel10.Location = new System.Drawing.Point(282, 3);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(309, 177);
-            this.panel10.TabIndex = 47;
-            this.panel10.Visible = false;
-            // 
-            // ariza_kayit_programi_buton
-            // 
-            this.ariza_kayit_programi_buton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.ariza_kayit_programi_buton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ariza_kayit_programi_buton.FlatAppearance.BorderSize = 0;
-            this.ariza_kayit_programi_buton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ariza_kayit_programi_buton.Font = new System.Drawing.Font("Century Gothic", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ariza_kayit_programi_buton.ForeColor = System.Drawing.Color.Gainsboro;
-            this.ariza_kayit_programi_buton.Image = ((System.Drawing.Image)(resources.GetObject("ariza_kayit_programi_buton.Image")));
-            this.ariza_kayit_programi_buton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ariza_kayit_programi_buton.Location = new System.Drawing.Point(0, 376);
-            this.ariza_kayit_programi_buton.Name = "ariza_kayit_programi_buton";
-            this.ariza_kayit_programi_buton.Size = new System.Drawing.Size(172, 44);
-            this.ariza_kayit_programi_buton.TabIndex = 28;
-            this.ariza_kayit_programi_buton.Text = "      Ariza Kayit ";
-            this.ariza_kayit_programi_buton.UseVisualStyleBackColor = false;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(40)))));
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 420);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(172, 100);
-            this.panel5.TabIndex = 27;
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1556,6 +1568,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.teknik_hizmet_databaseDataSet13)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
             this.panel_elektrik_ana.ResumeLayout(false);
             this.panel_elektrik_ana.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -1564,8 +1578,6 @@
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tableelektrikanaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.teknik_hizmet_databaseDataSet12)).EndInit();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1666,5 +1678,6 @@
         private Bunifu.Framework.UI.BunifuMetroTextbox kapasitif_fark_textbox;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button ariza_kayit_programi_buton;
+        private System.Windows.Forms.Label label12;
     }
 }
