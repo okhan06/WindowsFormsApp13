@@ -30,10 +30,6 @@ namespace WindowsFormsApp13
             SqlDataReader oku = komut.ExecuteReader();
             baglan.Close();
         }
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
         private void customizeDesign()
         {
             panel2.Visible = false;
@@ -78,19 +74,10 @@ namespace WindowsFormsApp13
             showSubmenu(panel6);
         }
 
-
-
-
-        private void ariza_kayit_programi_buton_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form2_Load(object sender, EventArgs e)
         {
             // TODO: Bu kod satırı 'teknik_hizmet_databaseDataSet13.Table_elektrikana' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
             this.table_elektrikanaTableAdapter1.Fill(this.teknik_hizmet_databaseDataSet13.Table_elektrikana);
-                                                         
         }
 
         private void endeks_elektrik_buton_Click(object sender, EventArgs e)
@@ -103,40 +90,25 @@ namespace WindowsFormsApp13
                     panel_elektrik_ana.Visible = true;
             }
         }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-                 
-
         private void hesap_kaydet_Click_1(object sender, EventArgs e)
         {
             
 
         }
-        
         private void hesap_kaydet_Click(object sender, EventArgs e)
         {
-            
-
             if (aktif1_textbox.Text == "" || aktif2_textbox.Text == "" ||
                         enduktif1_textbox.Text == "" || enduktif2_textbox.Text == "" ||
                         kapasitif1_textbox.Text == "" || kapasitif2_textbox.Text == "")
             {
                 MessageBox.Show(" Boş alan bırakmayınız");
-                return;
-                
+                return;               
 
             }
-
             else
-
             {
                 panel10.Visible = true;
-            }
-                                
-            
+            }   
 
             float akt1 = float.Parse(aktif1_textbox.Text);
             float akt2 = float.Parse(aktif2_textbox.Text);
@@ -186,7 +158,7 @@ namespace WindowsFormsApp13
                 baglan.Close();
                 
                 MessageBox.Show("Kaydedildi.");
-                
+             
             }
             catch (Exception hata)
             {
@@ -194,25 +166,28 @@ namespace WindowsFormsApp13
             }
             
         }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
+                
         private void bunifuFlatButton4_Click(object sender, EventArgs e)
         {
             {   // Sihirbaz ile oluşan DataAdapter adının denemeAdapter ve Dataset adının denemeDataSet olduğunu varsayarak
                 this.table_elektrikanaTableAdapter1.Update(this.teknik_hizmet_databaseDataSet13.Table_elektrikana);
-                dataGridView1.DataSource = this.teknik_hizmet_databaseDataSet13.Table_elektrikana;
-                
-                
+                dataGridView1.DataSource = this.teknik_hizmet_databaseDataSet13.Table_elektrikana;               
             }
-        }
+        }        
 
-        private void dataGridView1_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        private void bunifuFlatButton3_Click(object sender, EventArgs e)
         {
-            label12.Text = dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
+            SqlDataAdapter da = new SqlDataAdapter("Select * From Table_elektrikana ORDER BY tarih DESC", baglan);
+            //Personel tablosundaki verileri da adaptörüne aktarıyoruz.
+            DataSet ds = new DataSet();
+            //yeni bir dataset oluşturuyoruz
+            baglan.Open();
+            //Bağlantıyı açıyoruz
+            da.Fill(ds, "Table_elektrikana");
+            //dataadaptere çektiğimiz verileri datasete aktarıyoruz 
+            dataGridView1.DataSource = ds.Tables[0];
+            //datasettteki verileri datagridviewde gösteriyoruz.
+            baglan.Close();
         }
     }
 }
