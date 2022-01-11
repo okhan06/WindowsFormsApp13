@@ -19,8 +19,11 @@ namespace WindowsFormsApp13
         public Form2()
         {
             InitializeComponent();
-            
+           
+
         }
+        
+        
         SqlConnection baglan = new SqlConnection("Data Source=XX-BILGISAYAR\\SQLEXPRESS;Initial Catalog=teknik_hizmet_database;Integrated Security=True");
 
         private void verilerimi_goster()
@@ -29,6 +32,7 @@ namespace WindowsFormsApp13
             SqlCommand komut = new SqlCommand("Select *from ariza_kayit", baglan);
             SqlDataReader oku = komut.ExecuteReader();
             baglan.Close();
+            
         }
         private void customizeDesign()
         {
@@ -64,7 +68,6 @@ namespace WindowsFormsApp13
         {
             showSubmenu(panel2);
         }
-
         private void bahçe_sulama_buton_Click(object sender, EventArgs e)
         {
             showSubmenu(panel3);
@@ -83,11 +86,20 @@ namespace WindowsFormsApp13
         private void endeks_elektrik_buton_Click(object sender, EventArgs e)
         {
             {
-                if (panel_elektrik_ana.Visible)
+                if (panel_elektrik_ana.Visible && panel9.Visible && dataGridView1.Visible)
+                {
                     panel_elektrik_ana.Visible = false;
+                    panel9.Visible = false;
+                    dataGridView1.Visible = false;
+                }
+
 
                 else
+                {
                     panel_elektrik_ana.Visible = true;
+                    panel9.Visible = true;
+                    dataGridView1.Visible = true;
+                }  
             }
         }
         private void hesap_kaydet_Click_1(object sender, EventArgs e)
@@ -158,7 +170,9 @@ namespace WindowsFormsApp13
                 baglan.Close();
                 
                 MessageBox.Show("Kaydedildi.");
-             
+                bunifuFlatButton3_Click(sender, e);
+
+
             }
             catch (Exception hata)
             {
@@ -169,12 +183,17 @@ namespace WindowsFormsApp13
                 
         private void bunifuFlatButton4_Click(object sender, EventArgs e)
         {
-            {   // Sihirbaz ile oluşan DataAdapter adının denemeAdapter ve Dataset adının denemeDataSet olduğunu varsayarak
-                this.table_elektrikanaTableAdapter1.Update(this.teknik_hizmet_databaseDataSet13.Table_elektrikana);
-                dataGridView1.DataSource = this.teknik_hizmet_databaseDataSet13.Table_elektrikana;               
-            }
+            baglan.Open();
+            SqlDataAdapter da = new SqlDataAdapter("Select * from Table_elektrikana", baglan);
+            SqlCommandBuilder cmdb = new SqlCommandBuilder(da);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "Table_elektrikana");
+            dataGridView1.DataSource = ds.Tables[0];
+            baglan.Close();
+            da.Update(ds, "Table_elektrikana");
+            MessageBox.Show("Kayıt güncellendi");
+            
         }        
-
         private void bunifuFlatButton3_Click(object sender, EventArgs e)
         {
             SqlDataAdapter da = new SqlDataAdapter("Select * From Table_elektrikana ORDER BY tarih DESC", baglan);
