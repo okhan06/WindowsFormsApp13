@@ -152,7 +152,7 @@ namespace WindowsFormsApp13
                 // müşteriler tablomuzun ilgili alanlarına kayıt ekleme işlemini gerçekleştirecek sorgumuz.
                 SqlCommand komut1 = new SqlCommand(kayit, baglan);
                 //Sorgumuzu ve baglantimizi parametre olarak alan bir SqlCommand nesnesi oluşturuyoruz.
-                komut1.Parameters.AddWithValue("@tarih", timepicker.Value);
+                komut1.Parameters.AddWithValue("@tarih", timepicker1.Value);
                 komut1.Parameters.AddWithValue("@a1", aktif1_textbox.Text);
                 komut1.Parameters.AddWithValue("@a2", aktif2_textbox.Text);
                 komut1.Parameters.AddWithValue("@af", aktif_fark_textbox.Text);
@@ -208,5 +208,7 @@ namespace WindowsFormsApp13
             //datasettteki verileri datagridviewde gösteriyoruz.
             baglan.Close();
         }
+
+        
     }
 }
