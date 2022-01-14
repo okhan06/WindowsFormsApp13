@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.aktif1 = new System.Windows.Forms.Label();
             this.aktif2 = new System.Windows.Forms.Label();
             this.aktif_fark = new System.Windows.Forms.Label();
@@ -59,21 +59,9 @@
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel8 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.tarihDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aktifilkdegerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aktifsondegerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aktiffarkDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.enduktifilkdegerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.enduktifsondegerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.enduktiffarkDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.enduktiforanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kapasitifilkdegerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kapasitifsondegerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kapasitiffarkDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kapasitiforanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tableelektrikanaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.teknik_hizmet_databaseDataSet13 = new WindowsFormsApp13.teknik_hizmet_databaseDataSet13();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.bunifuFlatButton3 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.timepicker2 = new Bunifu.Framework.UI.BunifuDatepicker();
             this.yenile_buton = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
@@ -125,16 +113,23 @@
             this.kazanlar_buton = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.apart_ısı_merkezi_buton = new System.Windows.Forms.Button();
-            this.table_elektrikanaTableAdapter = new WindowsFormsApp13.teknik_hizmet_databaseDataSet12TableAdapters.Table_elektrikanaTableAdapter();
+            this.teknik_hizmet_databaseDataSet14 = new WindowsFormsApp13.teknik_hizmet_databaseDataSet14();
             this.tableelektrikanaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.teknik_hizmet_databaseDataSet12 = new WindowsFormsApp13.teknik_hizmet_databaseDataSet12();
-            this.table_elektrikanaTableAdapter1 = new WindowsFormsApp13.teknik_hizmet_databaseDataSet13TableAdapters.Table_elektrikanaTableAdapter();
-            this.timepicker2 = new Bunifu.Framework.UI.BunifuDatepicker();
-            this.bunifuFlatButton3 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.table_elektrikanaTableAdapter = new WindowsFormsApp13.teknik_hizmet_databaseDataSet14TableAdapters.Table_elektrikanaTableAdapter();
+            this.tarihDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aktifilkdegerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aktifsondegerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aktiffarkDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.enduktifilkdegerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.enduktifsondegerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.enduktiffarkDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.enduktiforanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kapasitifilkdegerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kapasitifsondegerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kapasitiffarkDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kapasitiforanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableelektrikanaBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.teknik_hizmet_databaseDataSet13)).BeginInit();
             this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel_elektrik_ana.SuspendLayout();
@@ -142,8 +137,8 @@
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.teknik_hizmet_databaseDataSet14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableelektrikanaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.teknik_hizmet_databaseDataSet12)).BeginInit();
             this.SuspendLayout();
             // 
             // aktif1
@@ -517,15 +512,14 @@
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.tarihDataGridViewTextBoxColumn,
             this.aktifilkdegerDataGridViewTextBoxColumn,
@@ -539,31 +533,31 @@
             this.kapasitifsondegerDataGridViewTextBoxColumn,
             this.kapasitiffarkDataGridViewTextBoxColumn,
             this.kapasitiforanDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.tableelektrikanaBindingSource1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.DataSource = this.tableelektrikanaBindingSource;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnF2;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dataGridView1.Location = new System.Drawing.Point(0, 183);
             this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.NullValue = null;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle11.NullValue = null;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle12;
             this.dataGridView1.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(40)))));
             this.dataGridView1.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataGridView1.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Gainsboro;
@@ -573,88 +567,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(1108, 601);
             this.dataGridView1.TabIndex = 26;
             this.dataGridView1.Visible = false;
-            // 
-            // tarihDataGridViewTextBoxColumn
-            // 
-            this.tarihDataGridViewTextBoxColumn.DataPropertyName = "tarih";
-            this.tarihDataGridViewTextBoxColumn.HeaderText = "tarih";
-            this.tarihDataGridViewTextBoxColumn.Name = "tarihDataGridViewTextBoxColumn";
-            // 
-            // aktifilkdegerDataGridViewTextBoxColumn
-            // 
-            this.aktifilkdegerDataGridViewTextBoxColumn.DataPropertyName = "aktif_ilk_deger";
-            this.aktifilkdegerDataGridViewTextBoxColumn.HeaderText = "aktif_ilk_deger";
-            this.aktifilkdegerDataGridViewTextBoxColumn.Name = "aktifilkdegerDataGridViewTextBoxColumn";
-            // 
-            // aktifsondegerDataGridViewTextBoxColumn
-            // 
-            this.aktifsondegerDataGridViewTextBoxColumn.DataPropertyName = "aktif_son_deger";
-            this.aktifsondegerDataGridViewTextBoxColumn.HeaderText = "aktif_son_deger";
-            this.aktifsondegerDataGridViewTextBoxColumn.Name = "aktifsondegerDataGridViewTextBoxColumn";
-            // 
-            // aktiffarkDataGridViewTextBoxColumn
-            // 
-            this.aktiffarkDataGridViewTextBoxColumn.DataPropertyName = "aktif_fark";
-            this.aktiffarkDataGridViewTextBoxColumn.HeaderText = "aktif_fark";
-            this.aktiffarkDataGridViewTextBoxColumn.Name = "aktiffarkDataGridViewTextBoxColumn";
-            // 
-            // enduktifilkdegerDataGridViewTextBoxColumn
-            // 
-            this.enduktifilkdegerDataGridViewTextBoxColumn.DataPropertyName = "enduktif_ilk_deger";
-            this.enduktifilkdegerDataGridViewTextBoxColumn.HeaderText = "enduktif_ilk_deger";
-            this.enduktifilkdegerDataGridViewTextBoxColumn.Name = "enduktifilkdegerDataGridViewTextBoxColumn";
-            // 
-            // enduktifsondegerDataGridViewTextBoxColumn
-            // 
-            this.enduktifsondegerDataGridViewTextBoxColumn.DataPropertyName = "enduktif_son_deger";
-            this.enduktifsondegerDataGridViewTextBoxColumn.HeaderText = "enduktif_son_deger";
-            this.enduktifsondegerDataGridViewTextBoxColumn.Name = "enduktifsondegerDataGridViewTextBoxColumn";
-            // 
-            // enduktiffarkDataGridViewTextBoxColumn
-            // 
-            this.enduktiffarkDataGridViewTextBoxColumn.DataPropertyName = "enduktif_fark";
-            this.enduktiffarkDataGridViewTextBoxColumn.HeaderText = "enduktif_fark";
-            this.enduktiffarkDataGridViewTextBoxColumn.Name = "enduktiffarkDataGridViewTextBoxColumn";
-            // 
-            // enduktiforanDataGridViewTextBoxColumn
-            // 
-            this.enduktiforanDataGridViewTextBoxColumn.DataPropertyName = "enduktif_oran";
-            this.enduktiforanDataGridViewTextBoxColumn.HeaderText = "enduktif_oran";
-            this.enduktiforanDataGridViewTextBoxColumn.Name = "enduktiforanDataGridViewTextBoxColumn";
-            // 
-            // kapasitifilkdegerDataGridViewTextBoxColumn
-            // 
-            this.kapasitifilkdegerDataGridViewTextBoxColumn.DataPropertyName = "kapasitif_ilk_deger";
-            this.kapasitifilkdegerDataGridViewTextBoxColumn.HeaderText = "kapasitif_ilk_deger";
-            this.kapasitifilkdegerDataGridViewTextBoxColumn.Name = "kapasitifilkdegerDataGridViewTextBoxColumn";
-            // 
-            // kapasitifsondegerDataGridViewTextBoxColumn
-            // 
-            this.kapasitifsondegerDataGridViewTextBoxColumn.DataPropertyName = "kapasitif_son_deger";
-            this.kapasitifsondegerDataGridViewTextBoxColumn.HeaderText = "kapasitif_son_deger";
-            this.kapasitifsondegerDataGridViewTextBoxColumn.Name = "kapasitifsondegerDataGridViewTextBoxColumn";
-            // 
-            // kapasitiffarkDataGridViewTextBoxColumn
-            // 
-            this.kapasitiffarkDataGridViewTextBoxColumn.DataPropertyName = "kapasitif_fark";
-            this.kapasitiffarkDataGridViewTextBoxColumn.HeaderText = "kapasitif_fark";
-            this.kapasitiffarkDataGridViewTextBoxColumn.Name = "kapasitiffarkDataGridViewTextBoxColumn";
-            // 
-            // kapasitiforanDataGridViewTextBoxColumn
-            // 
-            this.kapasitiforanDataGridViewTextBoxColumn.DataPropertyName = "kapasitif_oran";
-            this.kapasitiforanDataGridViewTextBoxColumn.HeaderText = "kapasitif_oran";
-            this.kapasitiforanDataGridViewTextBoxColumn.Name = "kapasitiforanDataGridViewTextBoxColumn";
-            // 
-            // tableelektrikanaBindingSource1
-            // 
-            this.tableelektrikanaBindingSource1.DataMember = "Table_elektrikana";
-            this.tableelektrikanaBindingSource1.DataSource = this.teknik_hizmet_databaseDataSet13;
-            // 
-            // teknik_hizmet_databaseDataSet13
-            // 
-            this.teknik_hizmet_databaseDataSet13.DataSetName = "teknik_hizmet_databaseDataSet13";
-            this.teknik_hizmet_databaseDataSet13.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // panel9
             // 
@@ -683,6 +595,57 @@
             this.panel9.Size = new System.Drawing.Size(1108, 183);
             this.panel9.TabIndex = 25;
             this.panel9.Visible = false;
+            // 
+            // bunifuFlatButton3
+            // 
+            this.bunifuFlatButton3.Active = false;
+            this.bunifuFlatButton3.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(104)))), ((int)(((byte)(142)))));
+            this.bunifuFlatButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton3.BorderRadius = 0;
+            this.bunifuFlatButton3.ButtonText = "Tarih Filtrele";
+            this.bunifuFlatButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton3.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bunifuFlatButton3.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton3.Iconimage = null;
+            this.bunifuFlatButton3.Iconimage_right = null;
+            this.bunifuFlatButton3.Iconimage_right_Selected = null;
+            this.bunifuFlatButton3.Iconimage_Selected = null;
+            this.bunifuFlatButton3.IconMarginLeft = 0;
+            this.bunifuFlatButton3.IconMarginRight = 0;
+            this.bunifuFlatButton3.IconRightVisible = true;
+            this.bunifuFlatButton3.IconRightZoom = 0D;
+            this.bunifuFlatButton3.IconVisible = true;
+            this.bunifuFlatButton3.IconZoom = 90D;
+            this.bunifuFlatButton3.IsTab = false;
+            this.bunifuFlatButton3.Location = new System.Drawing.Point(597, 105);
+            this.bunifuFlatButton3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.bunifuFlatButton3.Name = "bunifuFlatButton3";
+            this.bunifuFlatButton3.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(104)))), ((int)(((byte)(142)))));
+            this.bunifuFlatButton3.OnHovercolor = System.Drawing.Color.Blue;
+            this.bunifuFlatButton3.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuFlatButton3.selected = false;
+            this.bunifuFlatButton3.Size = new System.Drawing.Size(241, 29);
+            this.bunifuFlatButton3.TabIndex = 50;
+            this.bunifuFlatButton3.Text = "Tarih Filtrele";
+            this.bunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuFlatButton3.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton3.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton3.Click += new System.EventHandler(this.bunifuFlatButton3_Click);
+            // 
+            // timepicker2
+            // 
+            this.timepicker2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(104)))), ((int)(((byte)(142)))));
+            this.timepicker2.BorderRadius = 0;
+            this.timepicker2.ForeColor = System.Drawing.Color.White;
+            this.timepicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.timepicker2.FormatCustom = null;
+            this.timepicker2.Location = new System.Drawing.Point(848, 105);
+            this.timepicker2.Name = "timepicker2";
+            this.timepicker2.Size = new System.Drawing.Size(241, 29);
+            this.timepicker2.TabIndex = 49;
+            this.timepicker2.Value = new System.DateTime(2022, 1, 10, 23, 45, 17, 0);
             // 
             // yenile_buton
             // 
@@ -1558,73 +1521,91 @@
             this.apart_ısı_merkezi_buton.UseVisualStyleBackColor = false;
             this.apart_ısı_merkezi_buton.Click += new System.EventHandler(this.apart_ısı_merkezi_buton_Click);
             // 
-            // table_elektrikanaTableAdapter
+            // teknik_hizmet_databaseDataSet14
             // 
-            this.table_elektrikanaTableAdapter.ClearBeforeFill = true;
+            this.teknik_hizmet_databaseDataSet14.DataSetName = "teknik_hizmet_databaseDataSet14";
+            this.teknik_hizmet_databaseDataSet14.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tableelektrikanaBindingSource
             // 
             this.tableelektrikanaBindingSource.DataMember = "Table_elektrikana";
-            this.tableelektrikanaBindingSource.DataSource = this.teknik_hizmet_databaseDataSet12;
+            this.tableelektrikanaBindingSource.DataSource = this.teknik_hizmet_databaseDataSet14;
             // 
-            // teknik_hizmet_databaseDataSet12
+            // table_elektrikanaTableAdapter
             // 
-            this.teknik_hizmet_databaseDataSet12.DataSetName = "teknik_hizmet_databaseDataSet12";
-            this.teknik_hizmet_databaseDataSet12.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.table_elektrikanaTableAdapter.ClearBeforeFill = true;
             // 
-            // table_elektrikanaTableAdapter1
+            // tarihDataGridViewTextBoxColumn
             // 
-            this.table_elektrikanaTableAdapter1.ClearBeforeFill = true;
+            this.tarihDataGridViewTextBoxColumn.DataPropertyName = "tarih";
+            this.tarihDataGridViewTextBoxColumn.HeaderText = "tarih";
+            this.tarihDataGridViewTextBoxColumn.Name = "tarihDataGridViewTextBoxColumn";
             // 
-            // timepicker2
+            // aktifilkdegerDataGridViewTextBoxColumn
             // 
-            this.timepicker2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(104)))), ((int)(((byte)(142)))));
-            this.timepicker2.BorderRadius = 0;
-            this.timepicker2.ForeColor = System.Drawing.Color.White;
-            this.timepicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.timepicker2.FormatCustom = null;
-            this.timepicker2.Location = new System.Drawing.Point(848, 105);
-            this.timepicker2.Name = "timepicker2";
-            this.timepicker2.Size = new System.Drawing.Size(241, 29);
-            this.timepicker2.TabIndex = 49;
-            this.timepicker2.Value = new System.DateTime(2022, 1, 10, 23, 45, 17, 0);
+            this.aktifilkdegerDataGridViewTextBoxColumn.DataPropertyName = "aktif_ilk_deger";
+            this.aktifilkdegerDataGridViewTextBoxColumn.HeaderText = "aktif_ilk_deger";
+            this.aktifilkdegerDataGridViewTextBoxColumn.Name = "aktifilkdegerDataGridViewTextBoxColumn";
             // 
-            // bunifuFlatButton3
+            // aktifsondegerDataGridViewTextBoxColumn
             // 
-            this.bunifuFlatButton3.Active = false;
-            this.bunifuFlatButton3.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(104)))), ((int)(((byte)(142)))));
-            this.bunifuFlatButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton3.BorderRadius = 0;
-            this.bunifuFlatButton3.ButtonText = "Tarih Filtrele";
-            this.bunifuFlatButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton3.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bunifuFlatButton3.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton3.Iconimage = null;
-            this.bunifuFlatButton3.Iconimage_right = null;
-            this.bunifuFlatButton3.Iconimage_right_Selected = null;
-            this.bunifuFlatButton3.Iconimage_Selected = null;
-            this.bunifuFlatButton3.IconMarginLeft = 0;
-            this.bunifuFlatButton3.IconMarginRight = 0;
-            this.bunifuFlatButton3.IconRightVisible = true;
-            this.bunifuFlatButton3.IconRightZoom = 0D;
-            this.bunifuFlatButton3.IconVisible = true;
-            this.bunifuFlatButton3.IconZoom = 90D;
-            this.bunifuFlatButton3.IsTab = false;
-            this.bunifuFlatButton3.Location = new System.Drawing.Point(597, 105);
-            this.bunifuFlatButton3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.bunifuFlatButton3.Name = "bunifuFlatButton3";
-            this.bunifuFlatButton3.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(104)))), ((int)(((byte)(142)))));
-            this.bunifuFlatButton3.OnHovercolor = System.Drawing.Color.Blue;
-            this.bunifuFlatButton3.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton3.selected = false;
-            this.bunifuFlatButton3.Size = new System.Drawing.Size(241, 29);
-            this.bunifuFlatButton3.TabIndex = 50;
-            this.bunifuFlatButton3.Text = "Tarih Filtrele";
-            this.bunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuFlatButton3.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton3.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aktifsondegerDataGridViewTextBoxColumn.DataPropertyName = "aktif_son_deger";
+            this.aktifsondegerDataGridViewTextBoxColumn.HeaderText = "aktif_son_deger";
+            this.aktifsondegerDataGridViewTextBoxColumn.Name = "aktifsondegerDataGridViewTextBoxColumn";
+            // 
+            // aktiffarkDataGridViewTextBoxColumn
+            // 
+            this.aktiffarkDataGridViewTextBoxColumn.DataPropertyName = "aktif_fark";
+            this.aktiffarkDataGridViewTextBoxColumn.HeaderText = "aktif_fark";
+            this.aktiffarkDataGridViewTextBoxColumn.Name = "aktiffarkDataGridViewTextBoxColumn";
+            // 
+            // enduktifilkdegerDataGridViewTextBoxColumn
+            // 
+            this.enduktifilkdegerDataGridViewTextBoxColumn.DataPropertyName = "enduktif_ilk_deger";
+            this.enduktifilkdegerDataGridViewTextBoxColumn.HeaderText = "enduktif_ilk_deger";
+            this.enduktifilkdegerDataGridViewTextBoxColumn.Name = "enduktifilkdegerDataGridViewTextBoxColumn";
+            // 
+            // enduktifsondegerDataGridViewTextBoxColumn
+            // 
+            this.enduktifsondegerDataGridViewTextBoxColumn.DataPropertyName = "enduktif_son_deger";
+            this.enduktifsondegerDataGridViewTextBoxColumn.HeaderText = "enduktif_son_deger";
+            this.enduktifsondegerDataGridViewTextBoxColumn.Name = "enduktifsondegerDataGridViewTextBoxColumn";
+            // 
+            // enduktiffarkDataGridViewTextBoxColumn
+            // 
+            this.enduktiffarkDataGridViewTextBoxColumn.DataPropertyName = "enduktif_fark";
+            this.enduktiffarkDataGridViewTextBoxColumn.HeaderText = "enduktif_fark";
+            this.enduktiffarkDataGridViewTextBoxColumn.Name = "enduktiffarkDataGridViewTextBoxColumn";
+            // 
+            // enduktiforanDataGridViewTextBoxColumn
+            // 
+            this.enduktiforanDataGridViewTextBoxColumn.DataPropertyName = "enduktif_oran";
+            this.enduktiforanDataGridViewTextBoxColumn.HeaderText = "enduktif_oran";
+            this.enduktiforanDataGridViewTextBoxColumn.Name = "enduktiforanDataGridViewTextBoxColumn";
+            // 
+            // kapasitifilkdegerDataGridViewTextBoxColumn
+            // 
+            this.kapasitifilkdegerDataGridViewTextBoxColumn.DataPropertyName = "kapasitif_ilk_deger";
+            this.kapasitifilkdegerDataGridViewTextBoxColumn.HeaderText = "kapasitif_ilk_deger";
+            this.kapasitifilkdegerDataGridViewTextBoxColumn.Name = "kapasitifilkdegerDataGridViewTextBoxColumn";
+            // 
+            // kapasitifsondegerDataGridViewTextBoxColumn
+            // 
+            this.kapasitifsondegerDataGridViewTextBoxColumn.DataPropertyName = "kapasitif_son_deger";
+            this.kapasitifsondegerDataGridViewTextBoxColumn.HeaderText = "kapasitif_son_deger";
+            this.kapasitifsondegerDataGridViewTextBoxColumn.Name = "kapasitifsondegerDataGridViewTextBoxColumn";
+            // 
+            // kapasitiffarkDataGridViewTextBoxColumn
+            // 
+            this.kapasitiffarkDataGridViewTextBoxColumn.DataPropertyName = "kapasitif_fark";
+            this.kapasitiffarkDataGridViewTextBoxColumn.HeaderText = "kapasitif_fark";
+            this.kapasitiffarkDataGridViewTextBoxColumn.Name = "kapasitiffarkDataGridViewTextBoxColumn";
+            // 
+            // kapasitiforanDataGridViewTextBoxColumn
+            // 
+            this.kapasitiforanDataGridViewTextBoxColumn.DataPropertyName = "kapasitif_oran";
+            this.kapasitiforanDataGridViewTextBoxColumn.HeaderText = "kapasitif_oran";
+            this.kapasitiforanDataGridViewTextBoxColumn.Name = "kapasitiforanDataGridViewTextBoxColumn";
             // 
             // Form2
             // 
@@ -1645,8 +1626,6 @@
             this.Load += new System.EventHandler(this.Form2_Load);
             this.panel8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableelektrikanaBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.teknik_hizmet_databaseDataSet13)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.panel10.ResumeLayout(false);
@@ -1657,8 +1636,8 @@
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.teknik_hizmet_databaseDataSet14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableelektrikanaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.teknik_hizmet_databaseDataSet12)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1728,24 +1707,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button apart_ısı_merkezi_buton;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tarihDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn aktifilkdegerDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn aktifsondegerDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn aktiffarkDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn enduktifilkdegerDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn enduktifsondegerDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn enduktiffarkDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn enduktiforanDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn kapasitifilkdegerDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn kapasitifsondegerDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn kapasitiffarkDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn kapasitiforanDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource tableelektrikanaBindingSource;
-        private teknik_hizmet_databaseDataSet12 teknik_hizmet_databaseDataSet12;
-        private teknik_hizmet_databaseDataSet12TableAdapters.Table_elektrikanaTableAdapter table_elektrikanaTableAdapter;
-        private teknik_hizmet_databaseDataSet13 teknik_hizmet_databaseDataSet13;
-        private System.Windows.Forms.BindingSource tableelektrikanaBindingSource1;
-        private teknik_hizmet_databaseDataSet13TableAdapters.Table_elektrikanaTableAdapter table_elektrikanaTableAdapter1;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label9;
         private Bunifu.Framework.UI.BunifuMetroTextbox kapasitif_oran_textbox;
@@ -1762,5 +1723,20 @@
         private Bunifu.Framework.UI.BunifuFlatButton yenile_buton;
         private Bunifu.Framework.UI.BunifuDatepicker timepicker2;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton3;
+        private teknik_hizmet_databaseDataSet14 teknik_hizmet_databaseDataSet14;
+        private System.Windows.Forms.BindingSource tableelektrikanaBindingSource;
+        private teknik_hizmet_databaseDataSet14TableAdapters.Table_elektrikanaTableAdapter table_elektrikanaTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tarihDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn aktifilkdegerDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn aktifsondegerDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn aktiffarkDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn enduktifilkdegerDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn enduktifsondegerDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn enduktiffarkDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn enduktiforanDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn kapasitifilkdegerDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn kapasitifsondegerDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn kapasitiffarkDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn kapasitiforanDataGridViewTextBoxColumn;
     }
 }

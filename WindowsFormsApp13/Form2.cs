@@ -79,8 +79,9 @@ namespace WindowsFormsApp13
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            // TODO: Bu kod satırı 'teknik_hizmet_databaseDataSet14.Table_elektrikana' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
+            this.table_elektrikanaTableAdapter.Fill(this.teknik_hizmet_databaseDataSet14.Table_elektrikana);
             // TODO: Bu kod satırı 'teknik_hizmet_databaseDataSet13.Table_elektrikana' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
-            this.table_elektrikanaTableAdapter1.Fill(this.teknik_hizmet_databaseDataSet13.Table_elektrikana);
         }
 
         private void endeks_elektrik_buton_Click(object sender, EventArgs e)
@@ -193,22 +194,22 @@ namespace WindowsFormsApp13
             da.Update(ds, "Table_elektrikana");
             MessageBox.Show("Kayıt güncellendi");
             
-        }        
+        }
         private void bunifuFlatButton3_Click(object sender, EventArgs e)
         {
-            SqlDataAdapter da = new SqlDataAdapter("Select * From Table_elektrikana ORDER BY tarih DESC", baglan);
-            //Personel tablosundaki verileri da adaptörüne aktarıyoruz.
-            DataSet ds = new DataSet();
-            //yeni bir dataset oluşturuyoruz
             baglan.Open();
-            //Bağlantıyı açıyoruz
-            da.Fill(ds, "Table_elektrikana");
-            //dataadaptere çektiğimiz verileri datasete aktarıyoruz 
-            dataGridView1.DataSource = ds.Tables[0];
-            //datasettteki verileri datagridviewde gösteriyoruz.
+            //Timepickeri direk timepicker1.Value.ToString() yaptigimizda hatali bir ceviri oluyordu.
+            //Deger dogru gelse bile 2022-01-09 olmasi gerekirken timepicker1.Value.ToShortDate() ise 09-01-2022 donuyor.
+            //Gun/Ay/Yil ile sorguladiginda bos donuyo ama Yil/Ay/Gun sorgulayinca sonuc donuyor 204 ve 205inci satirlar terse ceviriyor.
+            //Sorguya ben cinlik yapip direk string sekilde ekledim sen parametre olarak ekleyebilirsin.
+            string date1 = timepicker1.Value.Year + "-" + timepicker1.Value.Month + "-" + timepicker1.Value.Day;
+            string date2 = timepicker2.Value.Year + "-" + timepicker2.Value.Month + "-" + timepicker2.Value.Day;
+            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM Table_elektrikana WHERE tarih BETWEEN '" + date1 + "' AND '" + date2 + "'", baglan);
+            SqlCommandBuilder cmdb = new SqlCommandBuilder(da);
+            DataTable ds = new DataTable();
+            da.Fill(ds);
+            dataGridView1.DataSource = ds;
             baglan.Close();
         }
-
-        
     }
 }

@@ -115,6 +115,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>teknik_hizmet_databaseDataSet13.xsd</DependentUpon>
     </Compile>
+    <Compile Include="teknik_hizmet_databaseDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>teknik_hizmet_databaseDataSet14.xsd</DependentUpon>
+    </Compile>
     <Compile Include="teknik_hizmet_databaseDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -245,6 +250,17 @@
     </None>
     <None Include="teknik_hizmet_databaseDataSet13.xss">
       <DependentUpon>teknik_hizmet_databaseDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="teknik_hizmet_databaseDataSet14.xsc">
+      <DependentUpon>teknik_hizmet_databaseDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="teknik_hizmet_databaseDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>teknik_hizmet_databaseDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="teknik_hizmet_databaseDataSet14.xss">
+      <DependentUpon>teknik_hizmet_databaseDataSet14.xsd</DependentUpon>
     </None>
     <None Include="teknik_hizmet_databaseDataSet2.xsc">
       <DependentUpon>teknik_hizmet_databaseDataSet2.xsd</DependentUpon>
