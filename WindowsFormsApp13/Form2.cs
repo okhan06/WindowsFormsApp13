@@ -204,7 +204,7 @@ namespace WindowsFormsApp13
             //Sorguya ben cinlik yapip direk string sekilde ekledim sen parametre olarak ekleyebilirsin.
             string date1 = timepicker1.Value.Year + "-" + timepicker1.Value.Month + "-" + timepicker1.Value.Day;
             string date2 = timepicker2.Value.Year + "-" + timepicker2.Value.Month + "-" + timepicker2.Value.Day;
-            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM Table_elektrikana WHERE tarih BETWEEN  '" + date1 + "' AND '" + date2 + "'", baglan);
+            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM Table_elektrikana WHERE  tarih  BETWEEN '" + date1 + "' AND '" + date2 +  "' ORDER BY tarih DESC", baglan);
             SqlCommandBuilder cmdb = new SqlCommandBuilder(da);
             DataTable ds = new DataTable();
             da.Fill(ds);

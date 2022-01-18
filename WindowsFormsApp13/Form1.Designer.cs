@@ -96,6 +96,7 @@
             this.sifre_textbox.Size = new System.Drawing.Size(309, 44);
             this.sifre_textbox.TabIndex = 2;
             this.sifre_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.sifre_textbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.sifre_textbox_KeyDown);
             // 
             // kullanici_textbox
             // 

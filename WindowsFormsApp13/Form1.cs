@@ -23,7 +23,7 @@ namespace WindowsFormsApp13
         SqlDataReader dr;
         private void Form1_Load(object sender, EventArgs e)
         {
-          
+
         }
         private void giris_buton_Click(object sender, EventArgs e)
         {
@@ -72,6 +72,17 @@ namespace WindowsFormsApp13
         private void bunifuImageButton2_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+
+
+        }
+
+       
+        private void sifre_textbox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                giris_buton_Click(sender, e);
+            }
         }
     }
 }
